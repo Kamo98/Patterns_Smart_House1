@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{F2E86D04-F944-4F35-A0FA-E1E78D20A81F}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SmartHouse</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractSubSystem.h" />
+    <ClInclude Include="Appliance.h" />
+    <ClInclude Include="ApplianceIsOff.h" />
+    <ClInclude Include="ApplianceIsOn.h" />
+    <ClInclude Include="ApplianceIsOverload.h" />
+    <ClInclude Include="CaretakerSchedule.h" />
+    <ClInclude Include="ClimateSystem.h" />
+    <ClInclude Include="Command.h" />
+    <ClInclude Include="CommandFactory.h" />
+    <ClInclude Include="CommandFlyweight.h" />
+    <ClInclude Include="CommPrintSchedule.h" />
+    <ClInclude Include="CompareCommand.h" />
+    <ClInclude Include="CreatorLogger.h" />
+    <ClInclude Include="CreatorSensorListener.h" />
+    <ClInclude Include="CreatorSmsNotification.h" />
+    <ClInclude Include="CreatorVoiceNotification.h" />
+    <ClInclude Include="DecoratorSListener.h" />
+    <ClInclude Include="ExecutionSchedule.h" />
+    <ClInclude Include="Hub.h" />
+    <ClInclude Include="Humidifier.h" />
+    <ClInclude Include="HumidityMeter.h" />
+    <ClInclude Include="ICommands.h" />
+    <ClInclude Include="ICommandUI.h" />
+    <ClInclude Include="IElementToVisit.h" />
+    <ClInclude Include="IIterableCollection.h" />
+    <ClInclude Include="IIterator.h" />
+    <ClInclude Include="Indicator.h" />
+    <ClInclude Include="IStateAppliance.h" />
+    <ClInclude Include="IteratorExecSchedule.h" />
+    <ClInclude Include="IVisitor.h" />
+    <ClInclude Include="KeysSystems.h" />
+    <ClInclude Include="LightingSystem.h" />
+    <ClInclude Include="RealAppliance.h" />
+    <ClInclude Include="Sensor.h" />
+    <ClInclude Include="SensorListener.h" />
+    <ClInclude Include="SensorLogger.h" />
+    <ClInclude Include="SmartLamp.h" />
+    <ClInclude Include="SmartLampAdapter.h" />
+    <ClInclude Include="SmsNotification.h" />
+    <ClInclude Include="StateDevice.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SubSystem.h" />
+    <ClInclude Include="SummerSystem.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Thermometer.h" />
+    <ClInclude Include="Timer.h" />
+    <ClInclude Include="Trigger.h" />
+    <ClInclude Include="TriggerAndSchedule.h" />
+    <ClInclude Include="TypeOfSensor.h" />
+    <ClInclude Include="UserInterface.h" />
+    <ClInclude Include="UserScript.h" />
+    <ClInclude Include="VisitorToPrintCons.h" />
+    <ClInclude Include="VoiceNotification.h" />
+    <ClInclude Include="WarmFloor.h" />
+    <ClInclude Include="WinterSubSystem.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AbstractSubSystem.cpp" />
+    <ClCompile Include="Appliance.cpp" />
+    <ClCompile Include="ApplianceIsOff.cpp" />
+    <ClCompile Include="ApplianceIsOn.cpp" />
+    <ClCompile Include="ApplianceIsOverload.cpp" />
+    <ClCompile Include="CaretakerSchedule.cpp" />
+    <ClCompile Include="ClimateSystem.cpp" />
+    <ClCompile Include="Command.cpp" />
+    <ClCompile Include="CommandFactory.cpp" />
+    <ClCompile Include="CommandFlyweight.cpp" />
+    <ClCompile Include="CommPrintSchedule.cpp" />
+    <ClCompile Include="CreatorLogger.cpp" />
+    <ClCompile Include="CreatorSensorListener.cpp" />
+    <ClCompile Include="CreatorSmsNotification.cpp" />
+    <ClCompile Include="CreatorVoiceNotification.cpp" />
+    <ClCompile Include="DecoratorSListener.cpp" />
+    <ClCompile Include="ExecutionSchedule.cpp" />
+    <ClCompile Include="Hub.cpp" />
+    <ClCompile Include="Humidifier.cpp" />
+    <ClCompile Include="HumidityMeter.cpp" />
+    <ClCompile Include="ICommands.cpp" />
+    <ClCompile Include="IIterableCollection.cpp" />
+    <ClCompile Include="IIterator.cpp" />
+    <ClCompile Include="Indicator.cpp" />
+    <ClCompile Include="IteratorExecSchedule.cpp" />
+    <ClCompile Include="LightingSystem.cpp" />
+    <ClCompile Include="MemontoSchedule.cpp" />
+    <ClCompile Include="RealAppliance.cpp" />
+    <ClCompile Include="Sensor.cpp" />
+    <ClCompile Include="SensorListener.cpp" />
+    <ClCompile Include="SensorLogger.cpp" />
+    <ClCompile Include="SmartHouse.cpp" />
+    <ClCompile Include="SmartLamp.cpp" />
+    <ClCompile Include="SmartLampAdapter.cpp" />
+    <ClCompile Include="SmsNotification.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="SubSystem.cpp" />
+    <ClCompile Include="SummerSystem.cpp" />
+    <ClCompile Include="Thermometer.cpp" />
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="Trigger.cpp" />
+    <ClCompile Include="UserInterface.cpp" />
+    <ClCompile Include="UserScript.cpp" />
+    <ClCompile Include="VisitorToPrintCons.cpp" />
+    <ClCompile Include="VoiceNotification.cpp" />
+    <ClCompile Include="WarmFloor.cpp" />
+    <ClCompile Include="WinterSubSystem.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
