@@ -33,7 +33,9 @@ void UserScript::add(ICommands *component)
 
 void UserScript::remove(ICommands* component)
 {
-	children.erase(find(children.begin(), children.end(), component));
+	auto iter = find(children.begin(), children.end(), component);
+	if (iter != children.end())
+		children.erase(iter);
 }
 
 int UserScript::get_time_unix()

@@ -9,5 +9,7 @@ class IStateAppliance
 {
 public:
 	virtual void execute_command(string nameOfFunction, map<string, int> &params, RealAppliance* app) = 0;
+
+	virtual ~IStateAppliance() {}
 };
 

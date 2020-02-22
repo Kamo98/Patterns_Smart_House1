@@ -56,24 +56,19 @@ void WinterSubSystem::buildClimateSystem()
 
 	//Создать расписание выполнения команд и сценариев
 	ExecutionSchedule *schedule = new ExecutionSchedule();
-	CaretakerSchedule* caretaker = new CaretakerSchedule(schedule);
-	//caretaker->take_memonto();
 
 	schedule->insert(script2, nullptr);
 
-	//caretaker->take_memonto();
 
 	schedule->insert(script1, nullptr);
 	schedule->insert(com6, nullptr);
 	schedule->insert(com7, nullptr);
 
-	//caretaker->take_memonto();
 
 	schedule->insert(com8, nullptr);
 	schedule->insert(com9, nullptr);
 	schedule->insert(script2Copy, nullptr);
 
-	//caretaker->restore_last_memonto();
 
 	add_schedule(KEY_SUBSYSTEM::Climate_System, schedule);
 }

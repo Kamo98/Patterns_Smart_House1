@@ -4,16 +4,15 @@
 #include "ApplianceIsOverload.h"
 
 
-RealAppliance::RealAppliance(string _deviceId)
+RealAppliance::RealAppliance(string _deviceId) : deviceId(_deviceId)
 {
-	deviceId = _deviceId;
-	//state = StateDevice::SWITCHED_OFF;
 	curState = new ApplianceIsOff();
 }
 
 
 RealAppliance::~RealAppliance()
 {
+	delete curState;
 }
 
 void RealAppliance::execute_command(string nameOfFunction, map<string, int>& params)
@@ -66,7 +65,7 @@ void RealAppliance::turn_on()
 void RealAppliance::turn_off()
 {
 	//state = StateDevice::SWITCHED_OFF;
-	delete curState;
+		delete curState;
 	curState = new ApplianceIsOff();
 }
 

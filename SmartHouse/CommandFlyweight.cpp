@@ -2,10 +2,8 @@
 
 
 
-CommandFlyweight::CommandFlyweight(IAppliance* app, string func)
+CommandFlyweight::CommandFlyweight(IAppliance* app, string func) : appliance(app), nameOfFunction (func)
 {
-	appliance = app;
-	nameOfFunction = func;
 }
 
 

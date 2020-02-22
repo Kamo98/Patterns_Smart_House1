@@ -4,6 +4,9 @@
 
 SubSystem::SubSystem()
 {
+	creatorOrdinaryLogger = nullptr;
+	creatorSmsLogger = nullptr;
+	creatorVoiceLogger = nullptr;
 }
 
 

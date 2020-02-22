@@ -6,7 +6,7 @@ Indicator::Indicator(TypeOfSensor type, int val, int oldVal)
 {
 	typeOfSensor = type;
 	value = val;
-	oldValue = oldValue;
+	oldValue = oldVal;
 }
 
 Indicator::~Indicator()

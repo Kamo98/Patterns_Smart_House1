@@ -103,10 +103,11 @@ void ExecutionSchedule::print()
 	while (iter1->has_current()) {
 		printf("\n\n==========================\n\n");
 		//printf("%s", iter1->get_cur().first->to_string().c_str());
-		IElementToVisit* elem = (IElementToVisit*)iter1->get_cur().first;
+		auto item = iter1->get_cur();
+		IElementToVisit* elem = (IElementToVisit*)item.first;
 		elem->accept(visitor);
-		if (iter1->get_cur().second != nullptr)
-			iter1->get_cur().second->accept(visitor);
+		if (item.second != nullptr)
+			item.second->accept(visitor);
 		iter1->to_next();
 	}
 

@@ -62,15 +62,15 @@ void SmartLampAdapter::set_intensity(map<string, int>& params)
 void SmartLampAdapter::set_color(map<string, int>& params)
 {
 	if (params.count(PARAM_COLOR_R) == 0) {
-		printf("Прибор \"%s\": в команде ОТСУТСТВУЕТ ПАРАМЕТР \"%s\" ", deviceId.c_str(), PARAM_COLOR_R);
+		printf("Прибор \"%s\": в команде ОТСУТСТВУЕТ ПАРАМЕТР \"%s\" ", deviceId.c_str(), PARAM_COLOR_R.c_str());
 		return;
 	}
 	if (params.count(PARAM_COLOR_G) == 0) {
-		printf("Прибор \"%s\": в команде ОТСУТСТВУЕТ ПАРАМЕТР \"%s\" ", deviceId.c_str(), PARAM_COLOR_G);
+		printf("Прибор \"%s\": в команде ОТСУТСТВУЕТ ПАРАМЕТР \"%s\" ", deviceId.c_str(), PARAM_COLOR_G.c_str());
 		return;
 	}
 	if (params.count(PARAM_COLOR_B) == 0) {
-		printf("Прибор \"%s\": в команде ОТСУТСТВУЕТ ПАРАМЕТР \"%s\" ", deviceId.c_str(), PARAM_COLOR_B);
+		printf("Прибор \"%s\": в команде ОТСУТСТВУЕТ ПАРАМЕТР \"%s\" ", deviceId.c_str(), PARAM_COLOR_B.c_str());
 		return;
 	}
 

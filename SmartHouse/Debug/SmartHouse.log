@@ -1,4 +1,39 @@
-﻿  SummerSystem.cpp
-h:\университет\7 сем\laby\kamo\patterns\smarthouse\smarthouse\realappliance.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
-  SmartHouse.vcxproj -> H:\Университет\7 сем\laby\Kamo\Patterns\SmartHouse\Debug\SmartHouse.exe
-  SmartHouse.vcxproj -> H:\Университет\7 сем\laby\Kamo\Patterns\SmartHouse\Debug\SmartHouse.pdb (Partial PDB)
+﻿  AbstractSubSystem.cpp
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\abstractsubsystem.cpp(44): warning C4018: <: несоответствие типов со знаком и без знака
+  Создание кода...
+  Компиляция...
+  WinterSubSystem.cpp
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\realappliance.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  UserInterface.cpp
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\realappliance.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\userinterface.cpp(39): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\stdio.h(1272): note:  см. объявление "scanf"
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\userinterface.cpp(50): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note:  см. объявление "getch"
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\userinterface.cpp(55): warning C4996: 'getch': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _getch. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.15063.0\ucrt\conio.h(452): note:  см. объявление "getch"
+  Trigger.cpp
+  Timer.cpp
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\realappliance.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  SummerSystem.cpp
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\realappliance.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  SmartHouse.cpp
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\realappliance.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\smarthouse.cpp(71): warning C4778: "printf": незавершенная строка форматирования "%\n"
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\smarthouse.cpp(90): warning C4778: "printf": незавершенная строка форматирования "%\n"
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\smarthouse.cpp(103): warning C4778: "printf": незавершенная строка форматирования "%\n"
+  MemontoSchedule.cpp
+  IteratorExecSchedule.cpp
+  IIterator.cpp
+  IIterableCollection.cpp
+  Hub.cpp
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\realappliance.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  ExecutionSchedule.cpp
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\executionschedule.cpp(42): warning C4018: <: несоответствие типов со знаком и без знака
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\executionschedule.cpp(51): warning C4018: <: несоответствие типов со знаком и без знака
+  CommPrintSchedule.cpp
+h:\университет\7 сем\паттерны\smarthouse\smarthouse\realappliance.h(7): warning C4067: непредвиденные лексемы за директивой препроцессора, требуется newline
+  CaretakerSchedule.cpp
+  Создание кода...
+  SmartHouse.vcxproj -> H:\Университет\7 сем\Паттерны\SmartHouse\Debug\SmartHouse.exe
+  SmartHouse.vcxproj -> H:\Университет\7 сем\Паттерны\SmartHouse\Debug\SmartHouse.pdb (Partial PDB)

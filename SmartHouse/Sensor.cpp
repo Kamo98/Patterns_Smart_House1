@@ -2,11 +2,10 @@
 
 
 
-Sensor::Sensor(string _deviceId, int val)
+Sensor::Sensor(string _deviceId, int val) : deviceId(_deviceId), value(val)
 {
-	deviceId = _deviceId;
 	type = TypeOfSensor::UNDEFINED;		//Сенсор неопредленного типа
-	value = val;
+	oldValue = value;
 }
 
 

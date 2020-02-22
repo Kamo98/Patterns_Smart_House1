@@ -11,6 +11,7 @@ Hub::Hub()
 
 Hub::~Hub()
 {
+	delete commandFactory;
 }
 
 

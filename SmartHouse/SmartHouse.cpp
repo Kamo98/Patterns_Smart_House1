@@ -107,6 +107,7 @@ void test_delegate() {
 	else
 		printf("Тригер на температуру >= 20 и <= 30 и влажность == 35 НЕ включён\n");
 
+	delete trig1;
 }
 
 
@@ -204,8 +205,6 @@ void test_l4() {
 	schedule->insert(scriptLamp2, trig30_25);
 	schedule->insert(comLamp1, trig30_25);
 
-
-
 	//Вывод всех команд и сценариев 
 	IIterator<pair<ICommands*, Trigger*>> *iter1 = schedule->create_iterator();
 
@@ -221,44 +220,29 @@ void test_l4() {
 		iter1->to_next();
 	}
 
-
-	//iter1 = schedule->create_iterator();
-	//printf("\n\n\n\t\tПосле сортировки скриптов и команд в расписании\n\n");
-	//while (iter1->has_current()) {
-	//	printf("\n\n==========================\n\n");
-	//	//printf("%s", iter1->get_cur().first->to_string().c_str());
-	//	IElementToVisit* elem = (IElementToVisit*)iter1->get_cur().first;
-	//	elem->accept(visitor);
-	//	iter1->get_cur().second->accept(visitor);
-	//	iter1->to_next();
-	//}
+	delete schedule;
 }
 
 
 void test_decorator() {
 	Thermometer *term1 = new Thermometer("Термометр 1", 15);
 	HumidityMeter *humid1 = new HumidityMeter("Измеритель влажности 1", 30);
-
 	SensorLogger *logger = new SensorLogger("log.txt");
-
 	SmsNotification *sms = new SmsNotification(logger);			//Декорируем логер
 
 	term1->add_listener(sms);
 	humid1->add_listener(sms);
-
 
 	//Изменение показателей датчиков
 	term1->set_value(18);
 	humid1->set_value(32);
 
 	printf("\n\n=====================\n");
-
-
-
 	//Декорируем декоратор
-	VoiceNotification *voice = new VoiceNotification(sms);
+	VoiceNotification *voice = new VoiceNotification(sms);	
 	
-
+	delete term1;
+	delete humid1;
 	term1 = new Thermometer("Термометр 1", 15);
 	humid1 = new HumidityMeter("Измеритель влажности 1", 30);
 
@@ -270,6 +254,8 @@ void test_decorator() {
 	term1->set_value(12);
 	humid1->set_value(29);
 
+	delete humid1;
+	delete term1;
 }
 
 
@@ -277,40 +263,14 @@ void test_decorator() {
 int main()
 {
 	setlocale(LC_CTYPE, "Rus");
-	/*map<StateDevice, string> state2str;
-	state2str[StateDevice::LOCKED] = "LOCKED";
-	state2str[StateDevice::OVERLOAD] = "OVERLOAD";
-	state2str[StateDevice::SWITCHED_OFF] = "SWITCHED_OFF";
-	state2str[StateDevice::SWITCHED_ON] = "SWITCHED_ON";*/
-
 
 	//test_proxy();
 	//test_delegate();
-
-	//test_l4();
-
 	//test_decorator();
-
-	/*for (int i = 0; i < 5; i++) {
-		printf("main id = %d\n", this_thread::get_id());
-		this_thread::sleep_for(chrono::milliseconds(1000));
-	}*/
-
 	//test_l4();	
-
 
 	UserInterface *UI = new UserInterface();
 
-	//Состояние - состояние устройства +
-	//Наблюдатель +
-	//Хранитель (для редактора расписаний)
-
-	//Команда(интерфейс, меню)
-	//Посетитель (для вывода в консоль компоновщика и триггеров) +
-	//Перенаправление (надо найти классы с высокой связностью)
-
-	//Цепочка обязанностей (возможно обработка ошибок, но в крайнем случае обработка нажатия клавиш)
-	//Посредник
-	//Стратегия
+	delete UI;
     return 0;
 }

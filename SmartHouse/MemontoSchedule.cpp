@@ -6,12 +6,13 @@ ExecutionSchedule::MemontoSchedule::MemontoSchedule(
 	vector<pair<ICommands*, Trigger*>>& _listCommands, 
 	vector<pair<ICommands*, Trigger*>>& _sortedListComm, 
 	map<Trigger*, int>& _countTriggerAction, 
-	map<Trigger*, vector<int>>& _trigger2index)
+	map<Trigger*, vector<int>>& _trigger2index) 
+	: 
+	listCommands(_listCommands), 
+	sortedListComm(_sortedListComm), 
+	countTriggerAction(_countTriggerAction),
+	trigger2index(_trigger2index)
 {
-	listCommands = _listCommands;
-	sortedListComm = _sortedListComm;
-	countTriggerAction = _countTriggerAction;
-	trigger2index = _trigger2index;
 }
 
 ExecutionSchedule::MemontoSchedule::~MemontoSchedule()

@@ -63,7 +63,7 @@ void WarmFloor::set_intensity(map<string, int> &params)
 
 
 	if (params.count(PARAM_INTENSITY) == 0) {
-		printf("Прибор \"%s\": в команде ОТСУТСТВУЕТ ПАРАМЕТР \"%s\"\n", deviceId.c_str(), PARAM_INTENSITY);
+		printf("Прибор \"%s\": в команде ОТСУТСТВУЕТ ПАРАМЕТР \"%s\"\n", deviceId.c_str(), PARAM_INTENSITY.c_str());
 		return;
 	}
 
